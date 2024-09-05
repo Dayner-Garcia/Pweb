@@ -1,5 +1,5 @@
 body {
-    font-family: Verdana, sans-serif;
+    font-family: Verdana, arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -49,7 +49,7 @@ a {
     text-align: left;
 }
 
-.imgMe{
+.imgMe, .imghobbies {
     border-radius: 50%;
     width: 250px;
     height: 250px;
@@ -67,18 +67,15 @@ a:hover {
     text-decoration: underline;
 }
 
-.profile, .hobbies {
+.profile {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-}
-
-.profile-info, .list-hobbies {
-    flex: 1;
-}
-
-.profile {
     gap: 20px;
+}
+
+.profile-info {
+    flex: 1;
 }
 
 .hobbies {
@@ -90,8 +87,6 @@ a:hover {
     height: 230px;
     border-radius: 60px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-left: 5px;
-    margin-right: 2px;
 }
 
 .list-hobbies {
@@ -101,23 +96,40 @@ a:hover {
 }
 
 .list {
-    list-style-type: square;
     padding: 0;
     margin: 0;
+    padding-left: 20px;
 }
 
 .elista {
-    font-size: 14px;
-    margin: 12px 100px;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 5px 10px;
+    padding: 4px 50px;
     text-align: left;
+    fond-weight: bold;
+
 }
 
 .pvideo {
     text-align: center;
 }
 
-.pvideo iframe {
-    border-radius: 8px;
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 footer {
@@ -148,15 +160,15 @@ footer {
     }
 
     .titles {
-        font-size: 2em;
+        font-size: 20px;
     }
 
     .Subtitles {
-        font-size: 1.5em;
+        font-size: 16px;
     }
 
     .text, .elista {
-        font-size: 1em;
+        font-size: 14px;
     }
 
     .profile, .hobbies {
@@ -169,5 +181,9 @@ footer {
         margin-bottom: 15px;
         width: 100%;
         max-width: 250px;
+    }
+
+    .video-container {
+        padding-bottom: 75%;
     }
 }
